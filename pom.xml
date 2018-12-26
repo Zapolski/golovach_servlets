@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>golovach_servlets</groupId>
+    <artifactId>golovach_servlets</artifactId>
+    <version>1.0</version>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+    </dependencies>
+
+    <servlet>
+        <servlet-name>productController</servlet-name>
+        <servlet-class>ProductController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>productController</servlet-name>
+        <url-pattern>/product.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>mockController</servlet-name>
+        <servlet-class>MockController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>mockController</servlet-name>
+        <url-pattern>/mock.do</url-pattern>
+    </servlet-mapping>
+
+
+</project>
